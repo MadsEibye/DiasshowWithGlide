@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Timer timer;
     final long DELAY_MS = 500;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 1000; // time in milliseconds between successive task executions.
-    int i = 0;
+    int i = 1;
     ArrayList<String> photoUrls = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final ViewPager viewPager = findViewById(R.id.vp_photogallery);
 
-            while (i<72){
+            while (i<75){
                 photoUrls.add("http://www2.dmu.dk/thorben_new/Danmark/noxbum_"+ i + ".png");
                 i++;
             }
